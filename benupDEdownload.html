@@ -1,7 +1,7 @@
 <script runat=server>
   Platform.Load("core","1.1");
   var results = Folder.Retrieve({Property:"ParentFolder.Name",SimpleOperator:"equals",Value:"Benup"});
-  for (let i = 0; i < results.length; i++) {
+  for (var i = 0; i < results.length; i++) {
     Write(Stringify(results[i]) + "<br>");
   }
 
